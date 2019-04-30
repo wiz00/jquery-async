@@ -14,7 +14,7 @@ Small inline head script allows you to load jQuery asynchronously and use regula
 <head>
 	<!-- some tags here -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" async></script>
-	<script>!function(n){var e=[],t=function(n){e.push(n)},f=setInterval(function(){if("function"==typeof jQuery){clearInterval(f);for(var n=0,t=e.length;t>n;n++)jQuery(e[n])}},50);"undefined"!=typeof n.$&&(n.$=t)}(window);</script>
+	<script>!function(n){var e=[],t=function(n){e.push(n)},f=setInterval(function(){if("function"==typeof jQuery){clearInterval(f);for(var n=0,t=e.length;t>n;n++)jQuery(e[n])}},50);"undefined"==typeof n.$&&(n.$=t)}(window);</script>
 </head>
 ```
 3. Use function `$` in your inline javascript code as you do with synchronus jQuery:

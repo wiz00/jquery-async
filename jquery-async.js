@@ -19,7 +19,7 @@
 		}
 	}, 50);
 
-	if ( typeof w.$ !== 'undefined' ) {
+	if ( typeof w.$ === 'undefined' ) {
 		w.$ = $;
 	}
 })(window);
